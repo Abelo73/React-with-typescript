@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Expandable from "./components/Expandable";
 import Form from "./components/Form";
+import ExpanseList from "./components/components/ExpanseList";
 
 function App() {
   const items = ["New york", "London", "Sydney", "Tokyo"];
@@ -80,6 +81,16 @@ function App() {
   const handleGameClick = () => {
     setGame({ ...game, player: { ...game.player, name: "Abel 2" } });
   };
+
+  // Expenses Exercise
+
+  const expenses = [
+    { id: 1, description: "aaaa", amount: 10, category: "Utilities" },
+    { id: 2, description: "bbbb", amount: 20, category: "Food" },
+    { id: 3, description: "cccc", amount: 30, category: "Transport" },
+    { id: 4, description: "dddd", amount: 40, category: "Housing" },
+  ];
+
   return (
     <div className="App">
       {/* <ListGroup
@@ -134,7 +145,9 @@ function App() {
 
       {/* Working with Forms */}
 
-      <Form />
+      {/* <Form /> */}
+
+      <ExpanseList expenses={expenses} onDelete={() => console.log("delete")} />
     </div>
   );
 }

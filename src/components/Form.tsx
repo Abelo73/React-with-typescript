@@ -1,9 +1,13 @@
 import React, { FormEvent, useRef, useState } from "react";
-
+import { useForm } from "react-hook-form";
 const Form = () => {
+  const form = useForm();
+
+  console.log(form);
+
   const [person, setPerson] = useState({
     name: "",
-    age: "",
+    age: 2,
   });
   //   const nameRef = useRef<HTMLInputElement>(null);
   //   const ageRef = useRef<HTMLInputElement>(null);
