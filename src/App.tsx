@@ -8,6 +8,7 @@ import Button from "./components/Button";
 import Like from "./components/Like";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
+import Expandable from "./components/Expandable";
 
 function App() {
   const items = ["New york", "London", "Sydney", "Tokyo"];
@@ -110,8 +111,25 @@ function App() {
 
       {/* Sharing Props */}
 
-      <Navbar cartItemsCounter={cartItems.length} />
-      <Cart onClear={() => setCartItems([])} cartItems={cartItems} />
+      {/* <Navbar cartItemsCounter={cartItems.length} />
+      <Cart onClear={() => setCartItems([])} cartItems={cartItems} /> */}
+
+      {/* Building Expandable Components */}
+
+      <Expandable>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        fugit quis unde hic atque ullam veniam odit in consectetur officia eius
+        eligendi, qui, dolorem maiores quos dicta delectus architecto cupiditate
+        magni. Aut doloribus accusamus numquam ducimus earum et doloremque
+        excepturi porro iure perferendis ut consectetur, beatae tempore
+        inventore dolorem, dolores voluptates magni perspiciatis at debitis
+        blanditiis. Omnis tempore repellendus minus dolorum odit quae sequi
+        dolore excepturi, iure obcaecati itaque temporibus dignissimos ipsum
+        neque sint officiis consectetur exercitationem accusamus possimus quam
+        assumenda cum consequatur optio. Tempora obcaecati officia
+        necessitatibus, nesciunt, molestiae quo deleniti quibusdam repellat
+        impedit voluptas rerum dignissimos ipsam et.
+      </Expandable>
     </div>
   );
 }
