@@ -9,6 +9,7 @@ import Like from "./components/Like";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Expandable from "./components/Expandable";
+import Form from "./components/Form";
 
 function App() {
   const items = ["New york", "London", "Sydney", "Tokyo"];
@@ -116,7 +117,7 @@ function App() {
 
       {/* Building Expandable Components */}
 
-      <Expandable>
+      {/* <Expandable>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
         fugit quis unde hic atque ullam veniam odit in consectetur officia eius
         eligendi, qui, dolorem maiores quos dicta delectus architecto cupiditate
@@ -129,7 +130,11 @@ function App() {
         assumenda cum consequatur optio. Tempora obcaecati officia
         necessitatibus, nesciunt, molestiae quo deleniti quibusdam repellat
         impedit voluptas rerum dignissimos ipsam et.
-      </Expandable>
+      </Expandable> */}
+
+      {/* Working with Forms */}
+
+      <Form />
     </div>
   );
 }
